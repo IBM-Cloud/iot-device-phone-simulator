@@ -136,7 +136,7 @@ input#pin{
 button#connectButton{
 	visibility: hidden;
 	color: #fff;
-	padding: 5px 24px;
+	padding: 10px 24px;
 	width: auto;
 	border: 1px #ffffff solid;
 	font-weight: normal;
@@ -165,3 +165,11 @@ div#maindemo {
         width: 100%;
         clear: both;
 }
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+	font-size: 1.4rem;
+	margin-top: 0.1em;
+}​

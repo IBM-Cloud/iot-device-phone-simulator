@@ -24,18 +24,28 @@
 <body>
 	<div class="outer-main">
 		<div id="main" class="main">
-      <div class="container">
-      <h1>Your Watson IoT organisation: <input type="text" name="org"><br></h1>
-      <h1>Your device type: <input type="text" name="devicetype"><br></h1>
-      <h1>Your device id: <input type="text" name="device"><br></h1>
-      <h1>Your device token: <input type="text" name="token"><br></h1>
+    <div class="block">
+      <label>Your Watson IoT organisation:</label>
+      <input type="text" name="org">
+    </div>
+    <div class="block">
+      <label>Your device type:</label>
+      <input type="text" name="devicetype">
+    </div>
+    <div class="block">
+      <label>Your device id:</label>
+      <input type="text" name="device">
+    </div>
+    <div class="block">
+      <label>Your device token:</label>
+      <input type="text" name="token">
+    </div>
       <input type="button" id="connect" value="Connect"/>
       <p style="padding-top:10px">
     			<img id="connectionImage" src="images/disconnected.svg" class="iot-connected-image" style="vertical-align:middle">
     			<span id="connection">Disconnected</span>
 			</p>​
 			<h3>Published Messages: <span id='msgCount'></h3>
-      </div>
     </div>
 		<div class="main">
 			<table class="data-table">
