@@ -1,8 +1,5 @@
 * {
-	text-align: center;
 	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	color: #ececec;
 }
 
 html {
@@ -15,9 +12,8 @@ html {
 }
 
 body {
-	background-image: linear-gradient(to bottom right, #2d3f4a, #1d3649);
 	margin: 0;
-	padding: 0;
+	padding: 1rem;
 }
 
 h1, h3 {
@@ -121,7 +117,7 @@ input#pin{
 }
 
 .data-table th, .data-table td {
-	padding: 0.5rem 0 0.5rem 0;
+	padding: .5rem;
 }
 
 .iot-footer-pad {
@@ -157,14 +153,6 @@ div#maindemo {
 	max-height: 30px;
 }
 
-.container {
-        width: 500px;
-        clear: both;
-    }
-    .container input {
-        width: 100%;
-        clear: both;
-}
 
 label {
   display: inline-block;
@@ -172,4 +160,4 @@ label {
   text-align: left;
 	font-size: 1.4rem;
 	margin-top: 0.1em;
-}​
+}

@@ -18,69 +18,93 @@
 <html>
 <head>
   <title>IoT Phone</title>
-  <link rel='stylesheet' href='stylesheets/device.css'/>
+	<link rel='stylesheet' href='stylesheets/device.css'/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-	<div class="outer-main">
-		<div id="main" class="main">
-    <div class="block">
-      <label>Your Watson IoT organisation:</label>
-      <input type="text" name="org">
-    </div>
-    <div class="block">
-      <label>Your device type:</label>
-      <input type="text" name="devicetype">
-    </div>
-    <div class="block">
-      <label>Your device id:</label>
-      <input type="text" name="device">
-    </div>
-    <div class="block">
-      <label>Your device token:</label>
-      <input type="text" name="token">
-    </div>
-      <input type="button" id="connect" value="Connect"/>
-      <p style="padding-top:10px">
-    			<img id="connectionImage" src="images/disconnected.svg" class="iot-connected-image" style="vertical-align:middle">
-    			<span id="connection">Disconnected</span>
-			</p>​
-			<h3>Published Messages: <span id='msgCount'></h3>
-    </div>
-		<div class="main">
-			<table class="data-table">
-				<tr class="table-title">
-					<th colspan="3">Movement</th>
-				</tr>
-				<tr class="data-title">
-					<th>Alpha</th>
-					<th>Beta</th>
-					<th>Gamma</th>
-				</tr>
-				<tr>
-					<td id="alpha">0</td>
-					<td id="beta">0</td>
-					<td id="gamma">0</td>
-				</tr>
-			</table>
-			<table class="data-table">
-				<tr class="table-title">
-					<th colspan="3">Acceleration</th>
-				</tr>
-				<tr class="data-title">
-					<th>X</th>
-					<th>Y</th>
-					<th>Z</th>
-				</tr>
-				<tr>
-					<td id="accx">0</td>
-					<td id="accy">0</td>
-					<td id="accz">0</td>
-				</tr>
-			</table>
-		</div>
-		<div class="iot-footer-pad"></div>
-	</div>
+
+		<section class="section">
+			<div class="container">
+				<h1 class="title">
+					 IoT Phone
+				</h1>
+				<p class="subtitle">
+					Visit this website on your mobile device to send accelerometer data to IBM Watson IoT Platform 
+				</p>
+						<div class ="connectionContainer">
+							<div class="field">
+								<label class="label">Organization ID:</label>
+								<input class="input" type="text" name="org" autocapitalize="none">
+							</div>
+							<div class="field">
+								<label class="label">Device Type:</label>
+								<input class="input" type="text" name="devicetype" autocapitalize="none">
+							</div>
+							<div class="field">
+								<label class="label">Device ID:</label>
+								<input class="input" type="text" name="device"  autocapitalize="none">
+							</div>
+							<div class="field">
+								<label class="label">Authentication Token:</label>
+								<input class="input" type="password" name="token" autocapitalize="none">
+							</div>
+							<div class="field has-addons">
+								<div class="control">
+									<input type="button" class="button is-link" id="connect" value="Connect" />
+								</div>
+								<div class="control">
+											<a class="button is-static"  id="connection">
+												 Disconnected
+											</a>
+								</div>
+							</div>
+							<div id = "status_message"></div>
+						</div>
+						<hr>
+						<div>
+							<h4 class="title is-4">Published Messages:
+								<span id='msgCount'>
+							</h4>
+							<div class="main">
+								<table class="data-table">
+									<tr class="table-title">
+										<th colspan="3">Movement</th>
+									</tr>
+									<tr class="data-title">
+										<th>Alpha</th>
+										<th>Beta</th>
+										<th>Gamma</th>
+									</tr>
+									<tr>
+										<td id="alpha">0</td>
+										<td id="beta">0</td>
+										<td id="gamma">0</td>
+									</tr>
+								</table>
+								<table class="data-table">
+									<tr class="table-title">
+										<th colspan="3">Acceleration</th>
+									</tr>
+									<tr class="data-title">
+										<th>X</th>
+										<th>Y</th>
+										<th>Z</th>
+									</tr>
+									<tr>
+										<td id="accx">0</td>
+										<td id="accy">0</td>
+										<td id="accz">0</td>
+									</tr>
+								</table>
+							</div>
+							<div class="iot-footer-pad"></div>
+						</div>
+			</div>
+
+		</section>
+
+
 	<!-- Please do not change the order of these links as some depend on each other -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/mqttws31.js"></script>
