@@ -107,11 +107,13 @@
 		console.log("Connected Successfully!");
 		isConnected = true;
 		changeConnectionStatusImage("images/connected.svg");
+		document.getElementById("status_message").innerHTML = "";
 		document.getElementById("connection").innerHTML = "Connected";
 	}
 
 	function onConnectFailure() {
 		// The device failed to connect. Let's try again in one second.
+		document.getElementById("status_message").innerHTML = "Could not connect to IBM Watson IoT Platform! Trying again in one second.";
 		console.log("Could not connect to IBM Watson IoT Platform! Trying again in one second.");
 		setTimeout(connectDevice(), 1000);
 	}
@@ -143,7 +145,7 @@
 	}
 
 	function changeConnectionStatusImage(image) {
-		document.getElementById("connectionImage").src = image;
+		// document.getElementById("connectionImage").src = image;
 	}
 
 	function getParameterByName(name) {
