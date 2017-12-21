@@ -1,4 +1,0 @@
-applications:
-- name: iotdeviceconnect
-  host: iotdeviceconnect
-  memory: 128M
