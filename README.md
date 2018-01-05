@@ -6,3 +6,7 @@ The web application is built for a [solution tutorial](https://console.bluemix.n
 - Setting up an IoT device.
 - Gathering mobile accelerometer and Gyroscope data in the Watson IoT Platform.
 - Exploring data and creating visualizations and then using advanced machine learning services to analyze data and detect anomalies in the historical data.
+
+
+### License
+See [License.txt](https://github.com/IBM-Cloud/iot-device-phone-simulator/blob/master/License.txt) for license information.
