@@ -1,0 +1,4 @@
+applications:
+- name: iot-solution-tutorial
+  host: iot-solution-tutorial
+  memory: 128M
