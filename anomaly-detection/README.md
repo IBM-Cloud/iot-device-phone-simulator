@@ -1,4 +1,4 @@
-## DSX Jupyter Notebook to detect anomalies
+## Watson Studio Jupyter Notebook to detect anomalies
 
 To run locally, refer this [link](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html).
 
