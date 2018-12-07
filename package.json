@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2",
-    "ibmiotf": "^0.2.33",
-    "jquery": "^3.2.1",
+    "express": "^4.16.4",
+    "ibmiotf": "^0.2.41",
+    "jquery": "^3.3.1",
     "path": "^0.12.7"
   }
 }
