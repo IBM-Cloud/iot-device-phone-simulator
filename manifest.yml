@@ -1,3 +1,4 @@
 applications:
 - name: iot-solution-tutorial
   memory: 128M
+  random-route: true
