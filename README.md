@@ -8,7 +8,7 @@ The web application is built for a [solution tutorial](https://console.bluemix.n
 - Exploring data and creating visualizations and then using advanced machine learning services to analyze data and detect anomalies in the historical data.
 
 ## Architecture
-![](/public/images/Architecture-6.png)
+![](/public/images/Architecture.png)
 
 ### License
 See [License.txt](https://github.com/IBM-Cloud/iot-device-phone-simulator/blob/master/License.txt) for license information.
